@@ -1,0 +1,24 @@
+Compiling and installing PlayRec on Linux for use with GNU Octave and MATAA with ALSA only
+
+- Get PlayRec from https://github.com/mbrennwa/playrec
+
+- Download and unzip the latest PortAudio v19 stable release files, available from the download
+section of the PortAudio website (http://files.portaudio.com/download.html). This can be unzipped anywhere, although unzipping into the 'playrec/lib' directory (created in step 1) should simplify compilation later.
+
+- Install dependencies: liboctave-dev, libasound2-dev
+
+- Start Octave and cd to playrec path
+
+- Execute the script to compile playrec: 
+	octave > compile_playrec_octave_linux_mataa
+	Please select the options required when compiling Playrec for Octave/Linux/MATAA:
+	PortAudio installation directory [/home/mbrennwa/playrec/lib/portaudio/]: 
+	Use debug mode [Y]: 
+	Use verbose mode [Y]: 
+	Use case insensitive function names [N]: 
+	Building mex with following arguments:
+	...
+
+- Once Playrec is compiled successfully, check if it is working:
+	octave > playrec('about')
+	Playrec is a Matlab utility (MEX file) that provides...

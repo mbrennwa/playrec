@@ -3,10 +3,9 @@ Compiling and installing PlayRec on Linux for use with GNU Octave and MATAA with
 - Get PlayRec from https://github.com/mbrennwa/playrec
 
 - Download the current PortAudio code into path/to/playrec/lib:
-git clone https://github.com/PortAudio/portaudio.git
+svn co https://github.com/PortAudio/portaudio.git/trunk path/to/playrec/lib/portaudio
 
-
-- Install dependencies: liboctave-dev, libasound2-dev
+- Install dependencies: octave-dev, libasound2-dev
 
 - Start Octave and cd to path/to/playrec
 
